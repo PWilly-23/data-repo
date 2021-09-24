@@ -4,3 +4,16 @@
     background-position: center;
     background-size: 100%;
 }
+
+#dmain{
+    width: 45%;
+    height: 80%;
+    background-color: rgba(245, 245, 220, 0.836);
+    border-radius: 5px;
+    border: 2px solid rgb(56, 55, 55);
+
+    position:absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
