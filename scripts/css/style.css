@@ -17,3 +17,9 @@
     top:50%;
     transform: translate(-50%, -50%);
 }
+.mainText{
+    text-align: center;
+    font-size: 20pt;
+    font-family: monospace;
+    color: rgb(58, 58, 58);
+}
