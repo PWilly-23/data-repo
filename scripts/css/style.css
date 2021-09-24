@@ -23,3 +23,35 @@
     font-family: monospace;
     color: rgb(58, 58, 58);
 }
+
+ul.ulnav{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #65625d ;
+    font-family: monospace;
+    font-size: 14pt;
+}
+li.linav{
+    float: left;
+    
+}
+li.linav a{
+    display: block;
+    color:beige;
+    text-align: center;
+    padding: 14px  16px;
+    text-decoration: none;
+}
+li.linav a.active{
+    display: block;
+    color:#f5eeda;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li.linav a:hover{
+    background-color:beige;
+    color:#65625d;
+}
