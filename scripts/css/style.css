@@ -4,6 +4,12 @@
     background-position: center;
     background-size: 100%;
 }
+#trailbg{
+    background-image: url(/images/greybg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
 
 #dmain{
     width: 45%;
