@@ -44,6 +44,12 @@ ul.ulnav{
     background-color: #65625d ;
     font-family: monospace;
     font-size: 14pt;
+
+    position:absolute;
+    left: 50%;
+    top:5%;
+    transform: translate(-50%, -50%);
+
 }
 li.linav{
     float: left;
