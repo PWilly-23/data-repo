@@ -2,8 +2,10 @@
     <head>
         <title>Trailers</title>
         <link rel="stylesheet" href="/scripts/css/style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body id="trailbg">
+   
         <ul class="ulnav">
             <li class="linav"><a href="index.html">Home</a></li>
             <li class="linav"><a href="theaters.html">Theaters</a></li>
@@ -12,18 +14,45 @@
             <li class="linav"><a href="movies.html">Movies</a></li>
             <li class="linav"><a href="trailers.html">Trailers</a></li>
         </ul>
-        <div id="homepage-slider">
-            <div class="slider-hero">
-                <div>
-                    <img src="/images/bgimage1.webp" />
+        
+            <div class="content">
+                <div class="images">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/da-MdTHI3ko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/cvh0nX08nRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lBrtZ7c6S3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div>
-                    <img src="/images/trailersbg.jpg" />
+               <div onclick="side_slide(-1)" class="slide left">
+                   <span class="fas fa-angle-left"><</span>
+               </div>
+               <div onclick="side_slide(1)" class="slide right">
+                   <span class="fas fa-angle-right">></span>
+               </div>
+                <div class="btm-sliders">
+                    <span onclick="btm_slide(1)"></span>
+                    <span onclick="btm_slide(2)"></span>
+                    <span onclick="btm_slide(3)"></span>
                 </div>
             </div>
-        </div>
-        <script src="/scripts/javascript/script.js"></script>
-    </body>
-    <body id="trailbg">
-        <body id="backgd">
-</html>
+            <script>
+                var indexValue = 1;
+                showImg(indexValue);
+                function btm_slide(e){showImg(indexValue = e);}
+                function side_slide(e){showImg(indexValue += e);}
+                function showImg(e){
+                   var i;
+                   const iframe = document.querySelectorAll('iframe');
+                   const sliders = document.querySelectorAll('.btm-sliders span');
+                   if(e > iframe.length){indexValue=1}
+                   if(e > iframe.length){indexValue=img.length}
+                   for(i = 0; i < iframe.length; i++){
+                       iframe[i].style.display = "none";
+                   }
+                   for(i = 0; i < sliders.length; i++){
+                       sliders[i].style.background = "rgba(255, 255, 255, 0.1)";
+                   }
+                   iframe[indexValue-1].style.display = "block";
+                   sliders[indexValue-1].style.background = "white";
+                } 
+            </script>
+       </body>
+   </html>
