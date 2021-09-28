@@ -88,7 +88,7 @@ ul.ulnavs{
 
     position:absolute;
     left: 80%;
-    top:20%;
+    top:19.5%;
     transform: translate(-50%, -50%);  
 }
 li.linavs{
@@ -100,7 +100,7 @@ li.linavs a{
     display: block;
     color:beige;
     text-align: center;
-    padding: 14px  16px;
+    padding: 20px  50px;
     text-decoration: none;
 }
 li.linavs a.active{
