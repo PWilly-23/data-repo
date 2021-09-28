@@ -75,6 +75,46 @@ li.linav a:hover{
     color:#65625d;
 }
 
+/*small navbar in theaters tab \/ */
+
+ul.ulnavs{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #65625d ;
+    font-family: monospace;
+    font-size: 14pt;
+
+    position:absolute;
+    left: 80%;
+    top:20%;
+    transform: translate(-50%, -50%);  
+}
+li.linavs{
+   float: none;
+    
+    
+}
+li.linavs a{
+    display: block;
+    color:beige;
+    text-align: center;
+    padding: 14px  16px;
+    text-decoration: none;
+}
+li.linavs a.active{
+    display: block;
+    color:#f5eeda;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li.linavs a:hover{
+    background-color:beige;
+    color:#65625d;
+}
+
 /*slider  \/ */
 
 iframe.scroll{
