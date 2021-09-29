@@ -13,7 +13,7 @@
 #dmain{
     width: 45%;
     height: 80%;
-    background-color: rgba(245, 245, 220, 0.836);
+    background-color: rgba(245, 245, 220, 0.541);
     border-radius: 5px;
     border: 2px solid rgb(56, 55, 55);
 
@@ -190,7 +190,6 @@ body{
 .content .right{
     right: 0;
 }
-<<<<<<< HEAD
 
 .dropdown {
     position: relative;
@@ -225,34 +224,3 @@ body{
   .checked {
     color: orange;
   }
-=======
-.sidenav {
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-  }
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Style page content */
-  .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-  }
-  
->>>>>>> 1d31c99a239f1bc9223a8605f577269f3fe95619
