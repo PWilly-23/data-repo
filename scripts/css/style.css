@@ -1,5 +1,5 @@
 #backgd{
-    background-image: url(/images/bgimage1.webp);
+    background-image: url(/images/grey.jfif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -10,7 +10,6 @@
     background-position: center;
     background-size: 100%;
 }
-
 #dmain{
     width: 45%;
     height: 80%;
