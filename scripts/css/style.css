@@ -23,16 +23,20 @@
     transform: translate(-50%, -50%);
 }
 #dmain2{
-    width: 48%;
+    width: 50%;
     height: 80%;
     background-color: rgba(245, 245, 220, 0.541);
     border-radius: 5px;
     border: 2px solid rgb(56, 55, 55);
+    overflow-y: scroll;
 
     position:absolute;
     left: 50%;
     top:50%;
     transform: translate(-50%, -50%);
+}
+.tabl{
+    align-items: center;
 }
 .mainText{
     text-align: center;
