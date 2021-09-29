@@ -1,73 +1,43 @@
-iframe.scroll{
-    width: 20%;
-    padding-left: 40%;
-}
-iframe.scroll:hover{
-    width: 23%;
-    padding-left: 40%;
-}
- 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-}
-.content{
-    height: 400px;
-    width: 750px;
-    overflow: hidden;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
     position: relative;
-}
- 
-.content .images{
-    height: 100%;
     width: 100%;
- 
-}
-.images iframe{
     height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
     width: 100%;
- 
-}
-.btm-sliders{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    display: flex;
-    transform: translateX(-50%);
-}
-.btm-sliders span{
-    height: 15px;
-    width: 50px;
-    border:2px solid white;
-    margin: 0 3px;
-    cursor: pointer;
-}
-.btm-sliders span:hover{
-    background: white;
- 
-}
-.content .slide{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 45px;
-    height: 45px;
-    border: 2px solid white;
-    background: rgba(255, 255, 255, 0.1) ;
-    cursor: pointer;
-}
-.content .slide:hover{
-    background: rgba(255, 255, 255, 0.2) ;
-}
-.slide span{
-    font-size: 35px;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #e07dd0;
     color: white;
-    line-height: 41px;
-    
-}
-.content .right{
-    right: 0;
-}
+    transform: rotateY(180deg);
+  }
