@@ -35,6 +35,15 @@
     top:50%;
     transform: translate(-50%, -50%);
 }
+#movie{
+    width: 90px;
+
+    position:absolute;
+    left: 30%;
+    top:5.2%;
+    transform: translate(-50%, -50%);
+}
+
 .tabl{
     align-items: center;
 }
