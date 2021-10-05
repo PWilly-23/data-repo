@@ -16,6 +16,7 @@
     background-color: rgba(245, 245, 220, 0.541);
     border-radius: 5px;
     border: 2px solid rgb(56, 55, 55);
+    overflow-y: scroll;
 
     position:absolute;
     left: 50%;
@@ -298,5 +299,14 @@ body{
     margin-bottom: 35px;
     height: 400px;
   }
+  .movieTextTitle{
+      font-size: 20pt;
+      font-family: monospace;
+      color: #2b2a29;
+  }
 
+  .nttd{
+      width: 300px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,1.0);
+  }
   
