@@ -16,7 +16,7 @@
     background-color: rgba(245, 245, 220, 0.541);
     border-radius: 5px;
     border: 2px solid rgb(56, 55, 55);
-    overflow-y: scroll;
+    overflow-y:scroll;
 
     position:absolute;
     left: 50%;
@@ -310,3 +310,23 @@ body{
       box-shadow: 0 4px 8px 0 rgba(0,0,0,1.0);
   }
   
+
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #c4c2c2; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(85, 85, 85, 0.568); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
